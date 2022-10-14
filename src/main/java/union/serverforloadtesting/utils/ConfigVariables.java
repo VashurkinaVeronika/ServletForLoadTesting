@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @PropertySource("classpath:application.properties")
 @Component
 @Data
-public class ConfigVariables {
+public class ConfigVariables implements AppConfig {
 
     @Value("${url}")
     private String url;

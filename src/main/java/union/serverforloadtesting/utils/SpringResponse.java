@@ -1,13 +1,14 @@
 package union.serverforloadtesting.utils;
 
+import lombok.Data;
 import lombok.Getter;
 
-@Getter
+@Data
 public class SpringResponse {
 
-    private final String errorCode;
-    private final String errorText;
-    private final String timeToRequestsAndReaponses;
+    private String errorCode;
+    private String errorText;
+    private String timeToRequestsAndReaponses;
 
     public SpringResponse(String errorCode, String errorText, String timeToRequestsAndReaponses) {
         this.errorText = errorText;
